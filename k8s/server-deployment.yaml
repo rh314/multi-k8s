@@ -11,9 +11,9 @@ spec:
     metadata:
       labels:
         component: server
-      spec:
-        containers:
-          - name: server
-            image:  rhtakealot/complex_server
-            ports:
-              - containerPort: 5000
+    spec:
+      containers:
+        - name: server
+          image:  rhtakealot/complex_server
+          ports:
+            - containerPort: 5000
