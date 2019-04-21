@@ -36,7 +36,7 @@ const redisPublisher = redisClient.duplicate();
 // Express route handlers
 
 app.get('/', (req, res) => {
-  res.send('Hi ' + req.baseUrl + ' , ' + req.path);
+  res.send('Hi');
 });
 
 app.get('/values/all', async (req, res) => {
