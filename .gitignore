@@ -1,6 +1,3 @@
-client/
-nginx/
-server/
-worker/
+**/node_modules
 github-remote-note.txt
 multi-k8s-238305-0883afd81cfe.json
