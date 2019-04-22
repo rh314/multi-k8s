@@ -12,8 +12,8 @@ spec:
     - rhgcservice-2.de
   acme:
     config:
-      - http01:
-          ingressClass: nginx
-        domains:
-          - rhgcservice-2.de
+    - http01:
+        ingressClass: nginx
+      domains:
+      - rhgcservice-2.de
 
