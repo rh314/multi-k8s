@@ -2,10 +2,10 @@ apiVersion: certmanager.k8s.io/v1alpha1
 kind: ClusterIssuer
 metadata:
   name: letsencrypt-prod
-  spec:
-    acme:
-      server: https://acme-v02.api.letsencrypt.org/directory
-      email: 'admin@rhgcservice.de'
-      privateKeySecretRef:
-        name: letsencrypt-prod
-      http01: {}
+spec:
+  acme:
+    server: https://acme-v02.api.letsencrypt.org/directory
+    email: 'admin@rhgcservice.de'
+    privateKeySecretRef:
+      name: letsencrypt-prod
+    http01: {}
