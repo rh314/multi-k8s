@@ -1,0 +1,19 @@
+apiVersion: certmanager.k8s.io/v1alpha1
+kind: Certificate
+metadata:
+  name: rhgcservice-2-de-tls
+spec:
+  secretName: rhgcservice-2-de
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commonName: rhgcservice-2.de
+  dnsNames:
+    - rhgcservice-2.de
+  acme:
+    config:
+      - http01:
+          ingressClass: nginx
+        domains:
+          - rhgcservice-2.de
+
